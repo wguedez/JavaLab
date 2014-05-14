@@ -1,0 +1,19 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Ejercicio1;
+
+/**
+ *
+ * @author wguedez
+ */
+public class Semana {
+    enum diasSemana {lunes, martes, miercoles, jueves,viernes,sabado,domingo};
+    
+    public static void main(String args[]){
+        for(diasSemana dias:diasSemana.values()){
+            System.out.println(dias);
+        }
+    }
+}
