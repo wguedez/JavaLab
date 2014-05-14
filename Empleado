@@ -1,13 +1,36 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Ejercicio1;
+
+/**
+ *
+ * @author wguedez
+ */
 public class Empleado {
 
 private String nombreEmpleado;
 private String codigoEmpleado;
-private double horasTrabajadas;
+private int horasTrabajadas;
 private double pagoHoras;
+private double sueldo;
 
-public Empleado(){
-
+public Empleado(String nombreEmpleado, String codigoEmpleado, int horasTrabajadas, double pagoHoras){
+    this.nombreEmpleado = nombreEmpleado;
+    this.codigoEmpleado = codigoEmpleado;
+    this.horasTrabajadas = horasTrabajadas;
+    this.pagoHoras = pagoHoras;
 }
 
+public double calcularSueldo(){
+    sueldo = horasTrabajadas * pagoHoras;
+
+return sueldo;
+}
+
+public String getNombreEmpleado(){
+return nombreEmpleado;
+}
 
 }
